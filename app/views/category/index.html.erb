@@ -1,0 +1,18 @@
+<h1>Poduct Categories</h1>
+
+<table>
+<tr>
+<!-- <th>Product ID</th> -->
+<th>Category</th>
+<th>ID</th>
+<!--<th>Product Name</th> -->
+<!--<th>Price</th> -->
+</tr>
+
+<% @catergories.each do |category| %>
+<tr>
+<td><%= link_to category.name, controller: "products", action: "show", id: category%></td>
+<td><%= category.id%></td>
+</tr>
+<% end %>
+</table>

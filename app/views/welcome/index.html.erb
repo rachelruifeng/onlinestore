@@ -1,0 +1,7 @@
+<h1>Welcome</h1>
+<p>Perform an import and view the results</p>
+<%= form_tag import_products_path, multipart: true do %>
+<%= file_field_tag :file %>
+<%= submit_tag "Import" %>
+<% end %>
+<!-- <%= link_to 'Import', controller: 'products' %> -->
