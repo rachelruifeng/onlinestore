@@ -1,15 +1,15 @@
 <h1>Poduct Details</h1>
 
-<table>
+<table style="width:200px"> 
 <tr>
-<th>Product Name</th>
-<th>Price</th>
+<th style="text-align:left;"> Product Name</th>
+<th style="text-align:left;">Price</th>
 </tr>
 
 <% @products.each do |product| %>
 <tr>
-<td><%= product.productName %></td>
-<td><%= product.price %></td>
+<td style="text-align:left;"><%= product.productName %></td>
+<td style="text-align:left;"><%= product.price %></td>
 </tr>
 <% end %>
 </table>

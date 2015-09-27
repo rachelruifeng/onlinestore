@@ -1,15 +1,13 @@
 <% will_paginate @products %>
 <h1>Poducts</h1>
-<table>
+<table style="width:300px">
 <tr>
-<th>Product Name</th>
-<th>Category</th>
+<th style="text-align:left;" >Product Name</th>
 </tr>
 
 <% @products.each do |product| %>
 <tr>
-<td><%= link_to product.productName, controller: "product_details", action: "show", id: product%></td>
-<td><%= product.category_id %></td>
+<td style="text-align:left;"><%= link_to product.productName, controller: "product_details", action: "show", id: product%></td>
 </tr>
 <% end %>
 </table>
